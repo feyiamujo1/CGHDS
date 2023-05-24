@@ -244,6 +244,15 @@ jQuery(function($){
       return false;
     });  
   
+    /* ----------------------------------------------------------- */
+  /*  12. Hamburger Code
+  /* ----------------------------------------------------------- */
+  jQuery(document).ready(function(){
+    jQuery('#nav-icon3').click(function(){
+      jQuery(this).toggleClass('open');
+    });
+  });
 
 });
 
+  
