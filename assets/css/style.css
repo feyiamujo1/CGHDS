@@ -37,6 +37,7 @@ body {
   color: #333333;
   font-size: 16px;
   overflow-x: hidden;
+  scroll-behavior: smooth !important;
 }
 
 .no-padding {
@@ -80,6 +81,13 @@ img {
   border: none;
 }
 
+.container{
+  padding-left: 0;
+  padding-right: 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .mu-read-more-btn {
   border: 1px solid #fff;
   color: #fff;
@@ -118,7 +126,7 @@ img {
   border-bottom: 2px solid #016632;
 }
 
-#mu-slider .mu-slider-single .mu-slider-content a:hover, .mu-blog-single-item .mu-blog-description a:hover{
+#hero_section .hero_content a:hover, .mu-blog-single-item .mu-blog-description a:hover, #hero_section .hero_content a:hover{
   background-color: #016632;
   border: #016632 solid 1px;
 }
@@ -386,6 +394,8 @@ img {
   right: 20px;
   text-align: center;
   text-decoration: none;
+  background-color: #016632;
+  border: 2px solid #016632;
   width: 50px;
   z-index: 999;
   -webkit-transition: all 0.5s ease 0s;
@@ -403,6 +413,7 @@ img {
   font-size: 14px;
   font-weight: bold;
 }
+
 
 .scrollToTop:hover,
 .scrollToTop:focus {
@@ -462,6 +473,43 @@ img {
   transform: translateY(0) scale(1);
 }
 
+#hero_section{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, rgba(2, 19, 10, 1),rgba(0, 0, 0, 0.3)) , url("/assets/img/CGHDS_PHOTO_GALLERY/IMG_8119.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hero_section .hero_content{
+  width: 90%;
+  margin: 20px auto 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+#hero_section .hero_content h2, #hero_section .hero_content p{
+  color: #ffffff;
+  max-width: 800px;
+
+}
+
+#hero_section .hero_content h2{
+  font-size: 36px;
+}
+
+#hero_section .hero_content p{
+  font-size: 18px;
+}
+
+#hero_section .hero_content a{
+  width: fit-content;
+}
+
 /*==================
  SLIDER SECTION
 ====================*/
@@ -480,7 +528,7 @@ img {
   display: inline;
   float: left;
   width: 100%;
-  height: 500px;
+  height: 100vh;
 }
 #mu-slider .mu-slider-single .mu-slider-img:after {
   background-color: rgba(0, 0, 0, 0.5);
@@ -494,11 +542,18 @@ img {
 #mu-slider .mu-slider-single .mu-slider-img figure {
   height: 100%;
   width: 100%;
+  background-image: url("/assets/img/CGHDS_PHOTO_GALLERY/IMG_7159_2.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
-#mu-slider .mu-slider-single .mu-slider-img figure img {
+/* #mu-slider .mu-slider-single .mu-slider-img figure img {
   width: 100%;
   height: 100%;
-}
+  object-fit: fill;
+  object-position: center;
+} */
 #mu-slider .mu-slider-single .mu-slider-content {
   color: #fff;
   position: absolute;
@@ -508,7 +563,7 @@ img {
   padding: 0 15%;
   width: 100%;
   text-align: center;
-  height: 100%;
+
 }
 #mu-slider .mu-slider-single .mu-slider-content h4 {
   letter-spacing: 1px;
@@ -529,7 +584,7 @@ img {
   letter-spacing: 0.5px;
   line-height: 28px;
 }
-#mu-slider .mu-slider-single .mu-slider-content a {
+#hero_section .hero_content a {
   margin-top: 25px;
 }
 #mu-slider .slick-prev,
@@ -590,7 +645,7 @@ img {
   display: inline;
   float: left;
   width: 100%;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 #mu-about-us .mu-about-us-area {
   display: inline;
@@ -603,9 +658,10 @@ img {
   width: 100%;
 }
 #mu-about-us .mu-about-us-area .mu-about-us-left h2 {
-  font-size: 40px;
+  font-size: 36px;
   margin-bottom: 20px;
   text-align: left;
+  color: #003218;
 }
 #mu-about-us .mu-about-us-area .mu-about-us-left ul {
   margin-left: 25px;
@@ -615,6 +671,9 @@ img {
   line-height: 30px;
   list-style: circle;
 }
+#mu-about-us .mu-about-us-area .mu-about-us-right.one{
+  display: none;
+}
 #mu-about-us .mu-about-us-area .mu-about-us-right {
   display: inline;
   float: left;
@@ -622,6 +681,7 @@ img {
   display: block;
   width: 100%;
   background-color: #ccc;
+  margin-top: 60px;
 }
 #mu-about-us .mu-about-us-area .mu-about-us-right a {
   display: block;
@@ -681,7 +741,7 @@ img {
 .mu-title h2 {
   color: #000;
   margin-bottom: 10px;
-  text-transform: uppercase;
+  text-transform:capitalize;
 }
 .mu-title p {
   color: #555;
@@ -694,28 +754,33 @@ img {
  ABOUT US COUNTER SECTION
 ====================*/
 #mu-abtus-counter {
-  background-image: url("../img/counter-bg.jpg");
+  background-image: linear-gradient(to right, rgba(2, 19, 10, 1),rgba(2, 19, 10, 0.7)), url("../img/CGHDS_PHOTO_GALLERY/matric-post-picture-min-1024x675.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: center;
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 60px 0;
   width: 100%;
 }
 #mu-abtus-counter .mu-abtus-counter-area {
-  display: inline;
-  float: left;
+  /* display: inline; */
+  /* float: left; */
   width: 100%;
+}
+#mu-abtus-counter .mu-abtus-counter-area #row{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* justify-content: space-between; */
 }
 #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single {
   border-right: 2px solid #888;
-  display: inline;
-  float: left;
   text-align: center;
   width: 100%;
 }
 #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single span {
-  color: #fff;
+  color: #016632;
   display: inline-block;
   font-size: 50px;
 }
@@ -741,7 +806,7 @@ img {
 #mu-features {
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 60px 0;
   width: 100%;
 }
 #mu-features .mu-features-area {
@@ -809,7 +874,7 @@ img {
   background-color: #333;
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 60px 0;
   width: 100%;
 }
 #mu-latest-courses .mu-latest-courses-area {
@@ -935,7 +1000,7 @@ img {
 #mu-our-teacher {
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 60px 0;
   width: 100%;
 }
 #mu-our-teacher .mu-our-teacher-area {
@@ -1044,7 +1109,7 @@ img {
   background-size: cover;
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 60px 0;
   position: relative;
   width: 100%;
   z-index: 10;
@@ -1152,7 +1217,7 @@ img {
 #mu-from-blog {
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 60px 0;
   width: 100%;
 }
 #mu-from-blog .mu-from-blog-area {
@@ -1277,7 +1342,7 @@ img {
   background-color: #f8f8f8;
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 60px 0;
   width: 100%;
 }
 #mu-course-content .mu-course-content-area {
@@ -1785,7 +1850,7 @@ img {
 #mu-gallery {
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 60px 0;
   width: 100%;
 }
 #mu-gallery .mu-gallery-area {
@@ -1946,7 +2011,7 @@ img {
 #mu-contact {
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 60px 0;
   width: 100%;
 }
 #mu-contact .mu-contact-area {
@@ -2028,7 +2093,7 @@ img {
 #mu-error {
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 60px 0;
   width: 100%;
 }
 #mu-error .mu-error-area {
@@ -2179,9 +2244,9 @@ img {
     padding: 30% 0;
   }
 
-  #mu-slider .mu-slider-single .mu-slider-content h2 {
-    font-size: 35px;
-    line-height: 65px;
+  #hero_section .hero_content h2 {
+    /* font-size: 32px; */
+    /* line-height: 65px; */
     margin-bottom: 0;
   }
 
@@ -2189,7 +2254,7 @@ img {
     height: 400px;
   }
 
-  #mu-slider .mu-slider-single .mu-slider-content a {
+  #hero_section .hero_content a {
     font-size: 15px;
     margin-top: 5px;
     padding: 5px 15px;
@@ -2213,7 +2278,7 @@ img {
   }
 
   #mu-abtus-counter {
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
     padding: 60px 0;
   }
 
@@ -2390,9 +2455,13 @@ img {
     
   }
 
-  #mu-slider .mu-slider-single .mu-slider-content h2 {
+  #hero_section{
+    height: 90vh;
+  }
+
+  #hero_section .hero_content h2 {
     font-size: 30px;
-    line-height: 60px;
+    /* line-height: 60px; */
   }
 
   #mu-slider .slick-prev:before,
@@ -2405,9 +2474,22 @@ img {
     background-size: cover;
   }
 
+  #mu-abtus-counter .mu-abtus-counter-area #row{
+    display: block;
+  }
+
   #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single {
     border: medium none;
     margin-bottom: 25px;
+    position: relative;
+  }
+
+  #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single::after{
+    position: absolute;
+    width: 10px;
+    bottom: 0px;
+    height: 2px;
+    background-color: #fff;
   }
 
   #mu-features .mu-features-area .mu-features-content .mu-single-feature {
@@ -2479,13 +2561,20 @@ img {
   }
 }
 @media (max-width: 640px) {
+  #hero_section{
+    height: 85vh;
+  }
+
   #mu-header .mu-header-area .mu-header-top-left .mu-top-phone {
     display: none;
   }
 
-  #mu-slider .mu-slider-single .mu-slider-content h2 {
-    font-size: 25px;
-    line-height: 50px;
+  #hero_section .hero_content h2 {
+    font-size: 26px;
+  }
+
+  #hero_section .hero_content p{
+    font-size: 16px;
   }
 
   #mu-slider .mu-slider-single .mu-slider-img {
@@ -2494,6 +2583,15 @@ img {
 
   #mu-slider .mu-slider-single .mu-slider-content h4 {
     letter-spacing: 0;
+  }
+
+  #mu-about-us .mu-about-us-area .mu-about-us-right {
+    margin: 0px 0px 20px;
+    display: none;
+  }
+
+  #mu-about-us .mu-about-us-area .mu-about-us-right.one{
+    display: block;
   }
 
   #mu-service {
@@ -2645,6 +2743,10 @@ img {
   #mu-about-us .mu-about-us-area .mu-about-us-left h2 {
     font-size: 30px;
     margin-bottom: 10px;
+  }
+
+  #hero_section{
+    height: 100vh;
   }
 
   #mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote {
