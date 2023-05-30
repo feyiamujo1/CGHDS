@@ -479,7 +479,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to right, rgba(2, 19, 10, 1),rgba(0, 0, 0, 0.3)) , url("/assets/img/CGHDS_PHOTO_GALLERY/IMG_8119.JPG");
+  background-image: linear-gradient(to right, rgba(2, 19, 10, 1),rgba(0, 0, 0, 0.3)) , url("../img/CGHDS_PHOTO_GALLERY/IMG_8119.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1312,7 +1312,7 @@ img {
   color: #016632;
 }
 #mu-page-breadcrumb.about-us{
-  background-image: linear-gradient(to right, rgba(2, 19, 10, 0.5),rgba(0, 0, 0, 1)) , url("/assets/img/CGHDS_PHOTO_GALLERY/IMG_4375.JPG");
+  background-image: linear-gradient(to right, rgba(2, 19, 10, 0.5),rgba(0, 0, 0, 1)) , url("../img/CGHDS_PHOTO_GALLERY/IMG_4375.JPG");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
