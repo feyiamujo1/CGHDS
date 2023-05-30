@@ -126,7 +126,7 @@ img {
   border-bottom: 2px solid #016632;
 }
 
-#hero_section .hero_content a:hover, .mu-blog-single-item .mu-blog-description a:hover, #hero_section .hero_content a:hover{
+#hero_section .hero_content a:hover, .executive_section a:hover, .mu-blog-single-item .mu-blog-description a:hover, #hero_section .hero_content a:hover, .executive_section a:hover{
   background-color: #016632;
   border: #016632 solid 1px;
 }
@@ -327,7 +327,7 @@ img {
   letter-spacing: 0.5px; */
 }
 #mu-menu .navbar-header .navbar-brand img {
-  width: 90px;
+  width: 80px;
 }
 #mu-menu .navbar-header .navbar-brand div{
   height: 70px;
@@ -483,6 +483,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  /* background-attachment: fixed; */
 }
 #hero_section .hero_content{
   width: 90%;
@@ -506,7 +507,7 @@ img {
   font-size: 18px;
 }
 
-#hero_section .hero_content a{
+#hero_section .hero_content a, .executive_section a{
   width: fit-content;
 }
 
@@ -546,7 +547,7 @@ img {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-attachment: fixed;
 }
 /* #mu-slider .mu-slider-single .mu-slider-img figure img {
   width: 100%;
@@ -670,6 +671,10 @@ img {
 #mu-about-us .mu-about-us-area .mu-about-us-left ul li {
   line-height: 30px;
   list-style: circle;
+  
+}
+#mu-about-us .mu-about-us-area .mu-about-us-left ul li::marker{
+  color: #016632;
 }
 #mu-about-us .mu-about-us-area .mu-about-us-right.one{
   display: none;
@@ -683,15 +688,15 @@ img {
   background-color: #ccc;
   margin-top: 60px;
 }
-#mu-about-us .mu-about-us-area .mu-about-us-right a {
+#mu-about-us .mu-about-us-area .mu-about-us-right #mu-abtus-video {
   display: block;
   width: 100%;
   position: relative;
 }
-#mu-about-us .mu-about-us-area .mu-about-us-right a img {
+#mu-about-us .mu-about-us-area .mu-about-us-right #mu-abtus-video img {
   width: 100%;
 }
-#mu-about-us .mu-about-us-area .mu-about-us-right a:after {
+#mu-about-us .mu-about-us-area .mu-about-us-right #mu-abtus-video:after {
   background-color: rgba(0, 0, 0, 0.8);
   bottom: 0;
   color: #ddd;
@@ -704,6 +709,7 @@ img {
   right: 0;
   text-align: center;
   top: 0;
+  display: none;
 }
 
 /*==== about us dynamic video player ====*/
@@ -739,7 +745,7 @@ img {
   width: 100%;
 }
 .mu-title h2 {
-  color: #000;
+  color: #003218;
   margin-bottom: 10px;
   text-transform:capitalize;
 }
@@ -749,7 +755,47 @@ img {
   line-height: 1.7;
   padding: 0 120px;
 }
-
+#inner-latest-courses-area{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.academic-program{
+  margin-top: 150px; 
+  display: flex; 
+  gap: 15px; 
+  justify-content: space-between;
+}
+.academic-program .academic-program-content{
+  width: 700px; 
+  height: 300px;
+  position: relative;
+  cursor: pointer;
+}
+.academic-program .academic-program-content img{
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  filter: brightness(0.8);
+  transition: all 0.7s;
+}
+.academic-program .academic-program-content .description{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 10px;
+  background-color: white;
+  color: #003218;
+  display: flex;
+  align-items: center;
+  transition: all 1s;
+}
+.academic-program .academic-program-content:hover .description{
+  color: white;
+  background-color: #003218;
+}
+.academic-program .academic-program-content:hover img{
+  filter: brightness(0.4);
+}
 /*==================
  ABOUT US COUNTER SECTION
 ====================*/
@@ -758,6 +804,7 @@ img {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+  background-attachment: fixed;
   display: inline;
   float: left;
   padding: 60px 0;
@@ -871,7 +918,10 @@ img {
  LATEST COURSES SECTION
 ====================*/
 #mu-latest-courses {
-  background-color: #333;
+  background-image: linear-gradient(to right, rgba(2, 19, 10, 1),rgba(2, 19, 10, 0.9)), url("../img/CGHDS_PHOTO_GALLERY/IMG_4375.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: inline;
   float: left;
   padding: 60px 0;
@@ -906,6 +956,8 @@ img {
 #mu-latest-courses .mu-latest-courses-area .mu-latest-courses-content .slick-dots li button {
   display: none;
 }
+/* #mu-latest-courses .mu-latest-courses-area  */
+
 
 .mu-latest-course-single {
   background-color: #fff;
@@ -1020,6 +1072,7 @@ img {
   width: 100%;
 }
 #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single:hover .mu-our-teacher-img .mu-our-teacher-social {
+  background-color: #26884f;
   opacity: 1;
 }
 #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single:hover .mu-our-teacher-img .mu-our-teacher-social a {
@@ -1055,6 +1108,22 @@ img {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+.research-gate-link .research-gate{
+  width: 17px;
+  fill: #fff;
+}
+.google-scholar-link{
+  box-sizing: border-box;
+}
+.google-scholar-link .google-scholar{
+  width: 20px;
+  fill: #fff;
+  padding-top: 7px;
+  /* border: 1px solid black; */
+}
+.research-gate-link:hover .research-gate, .google-scholar-link:hover .google-scholar{
+  fill: #016632;
+}
 #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single .mu-our-teacher-img .mu-our-teacher-social a {
   border: 2px solid #fff;
   color: #fff;
@@ -1075,8 +1144,12 @@ img {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+#mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single .mu-our-teacher-img .mu-our-teacher-social {
+  background-color: #26884f;
+}
 #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single .mu-our-teacher-img .mu-our-teacher-social a:hover, #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single .mu-our-teacher-img .mu-our-teacher-social a:focus {
   background-color: #FFF;
+  color: #016632;
 }
 #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single .mu-ourteacher-single-content {
   display: inline;
@@ -1086,7 +1159,9 @@ img {
 #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single .mu-ourteacher-single-content h4 {
   margin-bottom: 0;
   margin-top: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  color: #003218;
+  font-weight: 600;
 }
 #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single .mu-ourteacher-single-content span {
   color: #000;
@@ -1098,117 +1173,13 @@ img {
 #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single .mu-ourteacher-single-content p {
   font-size: 15px;
 }
-
-/*==================
- TESTIMONIAL SECTION
-====================*/
-#mu-testimonial {
-  background-attachment: fixed;
-  background-image: url("../img/testimonial-bg.jpg");
-  background-position: center center;
-  background-size: cover;
-  display: inline;
-  float: left;
-  padding: 60px 0;
-  position: relative;
-  width: 100%;
-  z-index: 10;
-}
-#mu-testimonial:after {
-  background-color: rgba(0, 0, 0, 0.8);
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
-#mu-testimonial .mu-testimonial-area {
-  display: inline;
-  float: left;
-  padding: 0 150px;
-  position: relative;
-  width: 100%;
-  z-index: 99;
-}
-#mu-testimonial .mu-testimonial-area .mu-testimonial-content {
-  display: inline;
-  float: left;
-  width: 100%;
-}
-#mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item {
-  display: inline;
-  float: left;
-  width: 100%;
-  outline: none;
-}
-#mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote {
-  background-color: #333;
-  border-radius: 4px;
-  display: inline;
-  float: left;
-  padding: 60px 30px;
-  width: 100%;
-}
-#mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote blockquote {
-  border: none;
-  text-align: center;
-  margin-bottom: 0;
-  position: relative;
-}
-#mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote blockquote:before {
-  content: '\f10d';
-  color: #fff;
-  font-family: fontAwesome;
-  font-style: italic;
-  left: 2%;
-  position: absolute;
-  top: 0;
-}
-#mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote blockquote p {
-  color: #fff;
-  font-size: 16px;
-  font-style: italic;
-  letter-spacing: 0.5px;
-  line-height: 1.8;
-  margin-bottom: 0;
-}
-#mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-img {
-  display: inline;
-  float: left;
-  width: 100%;
+.executive_section{
   text-align: center;
 }
-#mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-img img {
-  background-color: #555;
-  border: 1px solid #888;
-  border-radius: 50%;
-  margin: -50px auto 5px;
-  padding: 0;
-  width: 120px;
-}
-#mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-info {
-  display: inline;
-  float: left;
-  width: 100%;
-  text-align: center;
-}
-#mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-info h4 {
-  color: #fff;
-  font-size: 20px;
-  margin-bottom: 0px;
-}
-#mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-info span {
-  font-size: 14px;
-  letter-spacing: 0.3px;
-}
-#mu-testimonial .mu-testimonial-area .mu-testimonial-content .slick-dots li {
-  background-color: #fff;
-  height: 8px;
-  width: 20px;
-}
-#mu-testimonial .mu-testimonial-area .mu-testimonial-content .slick-dots li button {
-  display: none;
+.executive_section a{
+  margin-top: 40px;
+  border: 1px solid black;
+  color: #000;
 }
 
 /*==================
@@ -1337,7 +1308,15 @@ img {
 #mu-page-breadcrumb .mu-page-breadcrumb-area .breadcrumb li a {
   color: #fff;
 }
-
+#mu-page-breadcrumb .mu-page-breadcrumb-area .breadcrumb .active{
+  color: #016632;
+}
+#mu-page-breadcrumb.about-us{
+  background-image: linear-gradient(to right, rgba(2, 19, 10, 0.5),rgba(0, 0, 0, 1)) , url("/assets/img/CGHDS_PHOTO_GALLERY/IMG_4375.JPG");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #mu-course-content {
   background-color: #f8f8f8;
   display: inline;
@@ -2119,15 +2098,17 @@ img {
   width: 100%;
 }
 #mu-footer .mu-footer-top {
-  background-color: #333;
+  background-color: #002914;
   display: inline;
   float: left;
   padding: 50px 0;
   width: 100%;
 }
 #mu-footer .mu-footer-top .mu-footer-top-area {
-  display: inline;
-  float: left;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
   width: 100%;
 }
 #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget {
@@ -2163,6 +2144,7 @@ img {
 }
 #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget ul li a:hover, #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget ul li a:focus {
   margin-left: 5px;
+  color: #016632;
 }
 #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget p {
   color: #f9f9f9;
@@ -2200,12 +2182,16 @@ img {
   font-weight: lighter;
   letter-spacing: 0.5px;
 }
+#mu-footer .mu-footer-top .mu-footer-top-area .contact{
+  max-width: 300px;
+}
 #mu-footer .mu-footer-bottom {
-  background-color: #222;
+  background-color: #002914;
   display: inline;
   float: left;
   padding: 25px 0;
   width: 100%;
+  border-top: 1px solid #000d06;
 }
 #mu-footer .mu-footer-bottom .mu-footer-bottom-area {
   display: inline;
@@ -2254,7 +2240,7 @@ img {
     height: 400px;
   }
 
-  #hero_section .hero_content a {
+  #hero_section .hero_content a,  .executive_section a{
     font-size: 15px;
     margin-top: 5px;
     padding: 5px 15px;
@@ -2513,13 +2499,20 @@ img {
   }
 
   #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget {
-    margin-bottom: 30px;
+    /* margin-bottom: 10px; */
     text-align: center;
   }
 
   #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget .mu-subscribe-form input[type="email"] {
     width: 50%;
     margin-right: 10px;
+  }
+  #mu-footer .mu-footer-top .mu-footer-top-area{
+    flex-direction: column-reverse;
+  }
+  #mu-footer .mu-footer-top .mu-footer-top-area .contact{
+    width: 100%;
+    max-width: 100%;
   }
 
   #about-video-popup iframe {
@@ -2559,6 +2552,16 @@ img {
     font-size: 150px;
     line-height: 1.5;
   }
+  .academic-program{
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .academic-program .academic-program-content{
+    width: 100%;
+  }
+  
 }
 @media (max-width: 640px) {
   #hero_section{
