@@ -1283,7 +1283,7 @@ img {
   background-color: #333;
   display: inline;
   float: left;
-  padding: 30px 0;
+  padding: 40px 0;
   width: 100%;
 }
 #mu-page-breadcrumb .mu-page-breadcrumb-area {
@@ -1312,8 +1312,8 @@ img {
   color: #016632;
 }
 #mu-page-breadcrumb.about-us{
-  background-image: linear-gradient(to right, rgba(2, 19, 10, 0.5),rgba(0, 0, 0, 1)) , url("../img/CGHDS_PHOTO_GALLERY/IMG_4375.JPG");
-  background-position: top;
+  background-image: linear-gradient(to right, rgba(2, 19, 10, 1),rgba(0, 0, 0, 0.8)) , url("../img/CGHDS_PHOTO_GALLERY/IMG_4375.JPG");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1455,7 +1455,6 @@ img {
 #mu-course-content .mu-course-content-area .mu-course-details .mu-latest-course-single .mu-latest-course-single-content ul li span:first-child {
   display: inline-block;
   min-width: 150px;
-  float: left;
 }
 #mu-course-content .mu-course-content-area .mu-course-details .mu-latest-course-single .mu-latest-course-single-content .table {
   margin-top: 10px;

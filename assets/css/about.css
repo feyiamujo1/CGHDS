@@ -1,0 +1,21 @@
+.mu-title h2{
+    text-align: left;
+}
+.mu-title:not(:first-child){
+    margin-top: 15px;
+}
+#mu-course-content ol{
+    margin-left: -25px;
+}
+#mu-course-content ol li{
+    line-height: 30px;
+    /* list-style: circle; */
+}
+#mu-course-content ol li::marker{
+    color: #016632;
+    font-weight: 600;
+}
+#mu-course-content ol li span{
+    color: #016632;
+    font-weight: 600;
+}
