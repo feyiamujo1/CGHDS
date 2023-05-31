@@ -1,0 +1,50 @@
+#mu-page-breadcrumb.programmes{
+    background-image: linear-gradient(to right, rgba(2, 19, 10, 1),rgba(0, 0, 0, 0.7)) , url("../img/CGHDS_PHOTO_GALLERY/Centre_for_Gender.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mu-title h2{
+    text-align: left;
+}
+#mu-course-content ol{
+    margin-left: -25px;
+}
+#mu-course-content ol li{
+    line-height: 30px;
+    margin-bottom: 10px;
+    /* list-style: circle; */
+}
+.short-courses-list li{
+    margin-bottom: 10px;
+}
+#mu-course-content ol li::marker{
+    color: #016632;
+    font-weight: 600;
+    list-style: armenian;
+}
+#mu-course-content ol li span{
+    color: #003218;
+    font-weight: 600;
+}
+#mu-course-content ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+#mu-course-content ul li {
+    line-height: 30px;
+    list-style: circle;
+    width: fit-content;
+}
+#mu-course-content ul li::marker{
+    color: #000;
+}
+#mu-course-content ul li:hover {
+    color: #016632;
+    cursor: pointer;
+}
+#mu-course-content ul li:hover::marker{
+    color: #016632;
+    content: "x";
+    left: 15px;
+}
