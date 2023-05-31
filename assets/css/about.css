@@ -19,3 +19,52 @@
     color: #016632;
     font-weight: 600;
 }
+.mu-our-lecturers-content{
+    width: 100%;
+}
+.mu-our-lecturers-content .mu-ourlecturer-single-content h4{
+    text-transform: capitalize;
+    color: #003218;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.mu-our-lecturers-content .mu-ourlecturer-single-content span{
+    font-size: 14px;
+}
+.mu-our-lecturers-content .lecturers{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.mu-our-lecturers-content .lecturers .lecturer .mu-our-lecturer-img{
+    width: 100%;
+
+}
+.mu-our-lecturers-content .lecturers .lecturer .mu-our-lecturer-img img{
+    width: 100%;
+}
+#mu-course-content .table{
+    margin-top: 50px;
+}
+
+/* Medium screen */
+@media screen and (max-width: 992px) {
+    .mu-our-lecturers-content .lecturers{
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+  /* Tablet screen */
+@media screen and (max-width: 768px) {
+    .mu-our-lecturers-content .lecturers{    
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+  /* Mobile screen */
+@media screen and (max-width: 576px) {
+    .mu-our-lecturers-content .lecturers{
+        grid-template-columns: repeat(1, 1fr); /* Display 1 item per row on mobile screens */
+    }
+}
