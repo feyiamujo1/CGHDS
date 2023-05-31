@@ -1,5 +1,20 @@
+#mu-page-breadcrumb.about-us{
+    background-image: linear-gradient(to right, rgba(2, 19, 10, 1),rgba(0, 0, 0, 0.7)) , url("../img/CGHDS_PHOTO_GALLERY/IMG_4375.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .mu-title h2{
     text-align: left;
+}
+#mu-course-content .container .about-us-image{
+    width: 470px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    float: right;
+}
+#mu-course-content .container .about-us-image img{
+    width: 100%;
 }
 .mu-title:not(:first-child){
     margin-top: 15px;
@@ -45,26 +60,43 @@
     width: 100%;
 }
 #mu-course-content .table{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 /* Medium screen */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .mu-our-lecturers-content .lecturers{
         grid-template-columns: repeat(3, 1fr); 
+    }
+    #mu-course-content .container .about-us-image{
+        margin-left: 15px;
     }
 }
 
   /* Tablet screen */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .mu-our-lecturers-content .lecturers{    
         grid-template-columns: repeat(2, 1fr); 
     }
+    #mu-course-content ol{
+        margin-left: 20px;
+        padding: 0;
+    }
+    #mu-course-content .container .about-us-image{
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
 }
 
   /* Mobile screen */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 640px) {
     .mu-our-lecturers-content .lecturers{
         grid-template-columns: repeat(1, 1fr); /* Display 1 item per row on mobile screens */
+    }
+    #mu-page-breadcrumb.about-us{
+        background-image: linear-gradient(to right, rgba(2, 19, 10, 1),rgba(0, 0, 0, 0.7)) , url("../img/CGHDS_PHOTO_GALLERY/IMG_4375.JPG");
     }
 }

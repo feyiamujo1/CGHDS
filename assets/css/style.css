@@ -1311,12 +1311,6 @@ img {
 #mu-page-breadcrumb .mu-page-breadcrumb-area .breadcrumb .active{
   color: #016632;
 }
-#mu-page-breadcrumb.about-us{
-  background-image: linear-gradient(to right, rgba(2, 19, 10, 1),rgba(0, 0, 0, 0.8)) , url("../img/CGHDS_PHOTO_GALLERY/IMG_4375.JPG");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 #mu-course-content {
   background-color: #f8f8f8;
   display: inline;
