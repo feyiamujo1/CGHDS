@@ -27,11 +27,11 @@
     /* list-style: circle; */
 }
 #mu-course-content ol li::marker{
-    color: #016632;
+    color: #003218;
     font-weight: 600;
 }
 #mu-course-content ol li span{
-    color: #016632;
+    color: #003218;
     font-weight: 600;
 }
 .mu-our-lecturers-content{

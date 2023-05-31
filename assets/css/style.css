@@ -1202,6 +1202,11 @@ img {
   margin-top: 50px;
   width: 100%;
 }
+#mu-from-blog .mu-from-blog-area .mu-from-blog-content .mu-blog-single-item .mu-blog-caption h3{
+  font-weight: 600;
+  font-size: 18px;
+  color: #003218;
+}
 
 .mu-blog-single-item {
   display: inline;
@@ -2184,7 +2189,7 @@ img {
   float: left;
   padding: 25px 0;
   width: 100%;
-  border-top: 1px solid #000d06;
+  border-top: 1px solid rgb(92, 92, 92);
 }
 #mu-footer .mu-footer-bottom .mu-footer-bottom-area {
   display: inline;
