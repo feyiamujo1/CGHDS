@@ -783,16 +783,16 @@ img {
   bottom: 0;
   width: 100%;
   padding: 5px 10px;
-  background-color: white;
-  color: #003218;
+  background-color: #003218;
+  color: #fff;
   display: flex;
   align-items: center;
   transition: all 1s;
 }
-.academic-program .academic-program-content:hover .description{
+/* .academic-program .academic-program-content:hover .description{
   color: white;
   background-color: #003218;
-}
+} */
 .academic-program .academic-program-content:hover img{
   filter: brightness(0.4);
 }
@@ -927,6 +927,16 @@ img {
   padding: 60px 0;
   width: 100%;
 }
+#mu-latest-courses.event{
+  background: linear-gradient(to right, rgba(2, 19, 10, 1),rgba(2, 19, 10, 0.9)) !important;
+  /* padding-bottom: 20px; */
+}
+#mu-latest-courses.event .container{
+  padding-bottom: 20px;
+}
+#mu-latest-courses .mu-latest-courses-area .mu-latest-courses-content .slick-dots .slick-active{
+  background-color: #016632;
+}
 #mu-latest-courses .mu-latest-courses-area {
   display: inline;
   float: left;
@@ -957,7 +967,16 @@ img {
   display: none;
 }
 /* #mu-latest-courses .mu-latest-courses-area  */
-
+#mu-latest-courses .executive_section.prog_section .mu-read-more-btn{
+  border: 1px solid white;
+  color: white;
+}
+#mu-latest-courses .executive_section.prog_section .mu-read-more-btn:hover{
+  border: 1px solid #016632;
+}
+#mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-body ul li .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-info .mu-single-gallery-info-inner a{
+  background-color: #003218;
+}
 
 .mu-latest-course-single {
   background-color: #fff;
@@ -1002,7 +1021,7 @@ img {
   display: inline;
   float: left;
   width: 100%;
-  padding: 15px;
+  padding: 10px 15px;
 }
 .mu-latest-course-single .mu-latest-course-single-content h4 {
   color: #333;
@@ -1015,6 +1034,13 @@ img {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+}
+.mu-latest-course-single .mu-latest-course-single-content h4 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #003218;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .mu-latest-course-single .mu-latest-course-single-content p {
   font-size: 14px;
@@ -1288,7 +1314,7 @@ img {
   background-color: #333;
   display: inline;
   float: left;
-  padding: 40px 0;
+  padding: 50px 0;
   width: 100%;
 }
 #mu-page-breadcrumb .mu-page-breadcrumb-area {
@@ -1830,6 +1856,12 @@ img {
   padding: 60px 0;
   width: 100%;
 }
+#mu-page-breadcrumb.gallery{
+  background-image: linear-gradient(to right, rgba(2, 19, 10, 1),rgba(0, 0, 0, 0.7)) , url("../img/CGHDS_PHOTO_GALLERY/sapetro_lecture_theatre.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #mu-gallery .mu-gallery-area {
   display: inline;
   float: left;
@@ -1991,6 +2023,12 @@ img {
   padding: 60px 0;
   width: 100%;
 }
+#mu-page-breadcrumb.contact{
+  background-image: linear-gradient(to right, rgba(2, 19, 10, 1),rgba(0, 0, 0, 0.7)) , url(../img/CGHDS_PHOTO_GALLERY/julian-hochgesang-Dkn8-zPIbwo-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #mu-contact .mu-contact-area {
   display: inline;
   float: left;
@@ -2054,6 +2092,10 @@ img {
 }
 #mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform .form-submit input {
   margin-top: 10px;
+}
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform .form-submit input:hover {
+  background-color: #016632;
+  border: 1px solid #016632;
 }
 #mu-contact .mu-contact-area .mu-contact-content .mu-contact-right {
   display: inline;
