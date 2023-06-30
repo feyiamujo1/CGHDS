@@ -364,6 +364,7 @@ img {
   border: none;
 }
 #mu-menu .navbar-default .navbar-nav li .dropdown-menu {
+  border-top-color: #016632;
   border-radius: 0px;
 }
 #mu-menu .navbar-default .navbar-nav li .dropdown-menu li a {
@@ -373,6 +374,7 @@ img {
 }
 #mu-menu .navbar-default .navbar-nav li .dropdown-menu li a:hover, #mu-menu .navbar-default .navbar-nav li .dropdown-menu li a:focus {
   color: #fff;
+  background-color: #016632;
 }
 #mu-menu .navbar-default .navbar-nav .open a:hover, #mu-menu .navbar-default .navbar-nav .open a:focus {
   color: #fff;
@@ -846,6 +848,12 @@ img {
 #mu-abtus-counter .mu-abtus-counter-area .no-border {
   border: none;
 }
+.consortium-samples{
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+
+}
 
 /*==================
  FEATURES SECTION
@@ -1114,8 +1122,11 @@ img {
   position: relative;
   float: left;
   width: 100%;
+  height: 100%;
+  overflow-y: hidden;
 }
 #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single .mu-our-teacher-img img {
+  object-fit: cover;
   width: 100%;
 }
 #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single .mu-our-teacher-img .mu-our-teacher-social {
@@ -2105,6 +2116,17 @@ img {
 #mu-contact .mu-contact-area .mu-contact-content .mu-contact-right iframe {
   height: 500px;
   width: 100%;
+}
+#correct_response, #error_response{
+  text-align: center;
+  margin-bottom: 0px;
+  display: none;
+}
+#correct_response{
+  color: #016632;
+}
+#error_response{
+  color: red;
 }
 
 /*==================

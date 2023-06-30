@@ -15,6 +15,10 @@
     margin-bottom: 10px;
     /* list-style: circle; */
 }
+.short-courses-list ul {
+    line-height: 30px;
+    list-style-type: decimal;
+}
 .short-courses-list li{
     margin-bottom: 10px;
 }
@@ -31,20 +35,27 @@
     margin-left: 25px;
     margin-bottom: 15px;
 }
-#mu-course-content ul li {
+#mu-course-content ol li {
     line-height: 30px;
-    list-style: circle;
+    /* list-style: circle; */
+    list-style: decimal;
     width: fit-content;
 }
-#mu-course-content ul li::marker{
+#mu-course-content ol li .inner-list ul li {
+    line-height: 30px;
+    list-style: circle;
+    /* list-style: decimal; */
+    width: fit-content;
+}
+/* #mu-course-content ul li::marker{
     color: #000;
 }
 #mu-course-content ul li:hover {
     color: #016632;
     cursor: pointer;
-}
-#mu-course-content ul li:hover::marker{
+} */
+/* #mu-course-content ul li:hover::marker{
     color: #016632;
     content: "x";
     left: 15px;
-}
+} */
