@@ -2104,7 +2104,9 @@ img {
 #mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform .form-submit input {
   margin-top: 10px;
 }
-#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform .form-submit input:hover {
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform .form-submit input:hover, 
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform .form-submit input:focus, 
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform .form-submit input:visited {
   background-color: #016632;
   border: 1px solid #016632;
 }
@@ -2118,6 +2120,7 @@ img {
   width: 100%;
 }
 #correct_response, #error_response{
+  margin-top: 5px;
   text-align: center;
   margin-bottom: 0px;
   display: none;
@@ -2128,6 +2131,7 @@ img {
 #error_response{
   color: red;
 }
+
 
 /*==================
  ERROR PAGE
