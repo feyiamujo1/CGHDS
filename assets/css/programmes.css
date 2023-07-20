@@ -15,15 +15,24 @@
     margin-bottom: 10px;
     /* list-style: circle; */
 }
+#mu-course-content ol li b{
+    color: #003218;
+}
 .short-courses-list ul {
     line-height: 30px;
     list-style-type: decimal;
+    
 }
 .short-courses-list li{
     margin-bottom: 10px;
+    margin-left: -5px;
+}
+.short-courses-list li::marker{
+    color: #003218;
+    font-weight: 600;
 }
 #mu-course-content ol li::marker{
-    color: #016632;
+    color: #003218;
     font-weight: 600;
     list-style: armenian;
 }
@@ -47,15 +56,15 @@
     /* list-style: decimal; */
     width: fit-content;
 }
-/* #mu-course-content ul li::marker{
-    color: #000;
-}
-#mu-course-content ul li:hover {
+#mu-course-content ul li .inner-list ul li::marker{
     color: #016632;
+}
+/* #mu-course-content ul li:hover {
+    color: #003218;
     cursor: pointer;
 } */
 /* #mu-course-content ul li:hover::marker{
-    color: #016632;
+    color: #003218;
     content: "x";
     left: 15px;
 } */

@@ -1,0 +1,51 @@
+#mu-page-breadcrumb.consortium{
+    background-image: linear-gradient(to right, rgba(2, 19, 10, 1),rgba(0, 0, 0, 0.7)) , url("../img/CGHDS_PHOTO_GALLERY/IMG_7105.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container h2{
+    text-align: left;
+    margin-bottom: 10px;
+    color: #003218;
+}
+#mu-course-content ol{
+    margin-left: -22px;
+}
+#mu-course-content ol li b{
+    color: #003218;
+}
+#mu-course-content ol li{
+    line-height: 30px;
+    margin-bottom: 10px;
+    /* list-style: circle; */
+}
+.short-courses-list li{
+    margin-bottom: 10px;
+}
+#mu-course-content ol li::marker{
+    color: #003218;
+    font-weight: 600;
+    list-style: armenian;
+}
+#mu-course-content ol li span{
+    color: #003218;
+    font-weight: 600;
+}
+#mu-course-content ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+#mu-course-content ul li {
+    line-height: 30px;
+    list-style: circle;
+    width: fit-content;
+}
+#mu-course-content ul li::marker{
+    color: #003218;
+}
+/* #mu-course-content ul li:hover::marker{
+    color: #;
+    content: "x";
+    left: 15px;
+} */

@@ -764,7 +764,7 @@ img {
 .academic-program{
   margin-top: 150px; 
   display: flex; 
-  gap: 15px; 
+  gap: 30px; 
   justify-content: space-between;
 }
 .academic-program .academic-program-content{
@@ -2422,6 +2422,9 @@ img {
 
   #mu-contact .mu-contact-area .mu-contact-content .mu-contact-right {
     margin-top: 50px;
+  }
+  .academic-program{
+    gap: 25px;
   }
 }
 @media (max-width: 767px) {
