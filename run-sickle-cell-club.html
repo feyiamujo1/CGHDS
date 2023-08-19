@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Center for Gender, Humanitarian and Development Studies | About
+      Redeemer's University (RUN) Sickle Cell+ Club | Center for
+      Gender, Humanitarian and Development Studies
     </title>
 
     <!-- Favicon -->
@@ -35,6 +36,12 @@
     <!-- Main style sheet -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
+    <!-- About Us page style sheet -->
+    <!-- <link href="assets/css/programmes.css" rel="stylesheet"> -->
+
+    <!-- About Us page style sheet -->
+    <link href="assets/css/Consortium.css" rel="stylesheet" />
+
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
@@ -45,13 +52,8 @@
       rel="stylesheet"
       type="text/css" />
   </head>
-  <body>
-    <!--START SCROLL TOP BUTTON -->
-    <a class="scrollToTop" href="#">
-      <i class="fa fa-angle-up"></i>
-    </a>
-    <!-- END SCROLL TOP BUTTON -->
 
+  <body>
     <!-- Start menu -->
     <section id="mu-menu">
       <nav class="navbar navbar-default" role="navigation">
@@ -72,11 +74,6 @@
                 <span></span>
               </div>
             </button>
-
-            <!-- LOGO -->
-            <!-- TEXT BASED LOGO -->
-            <!-- <a class="navbar-brand" href="index.html"><img src="./assets/img/CGHDS_LOGO.PNG" class="logo" /></a> -->
-            <!-- IMG BASED LOGO  -->
             <a class="navbar-brand" href="/">
               <img src="assets/img/CGHDS_LOGO.PNG" alt="logo" />
               <div></div>
@@ -88,8 +85,8 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
               <li><a href="/">Home</a></li>
-              <li>
-                <a href="about-us.html" class="active">About Us</a>
+              <li class="">
+                <a href="about-us.html" class="active">About Us </a>
               </li>
               <li class="dropdown">
                 <a
@@ -117,28 +114,26 @@
                   </li>
                 </ul>
               </li>
-              <li class="dropdown">
+              <li class="dropdown active">
                 <a
                   href="#"
-                  class="dropdown-toggle"
+                  class="dropdown-toggle active"
                   data-toggle="dropdown"
-                  >Consortium <span class="fa fa-angle-down"></span></a>
+                  >Consortium <span class="fa fa-angle-down"></span
+                ></a>
                 <ul class="dropdown-menu" role="menu">
                   <li>
-                    <a href="consortium.html"
-                      >International Consortium</a
-                    >
+                    <a href="consortium.html">International Consortium</a>
                   </li>
                   <li>
-                    <a
-                      href="run-sickle-cell-club.html"
+                    <a href="run-sickle-cell-club.html"
                       >RUN Sickle Cell+ Club</a
                     >
                   </li>
                 </ul>
               </li>
               <li><a href="events.html">Events</a></li>
-              <li class="active"><a href="contact.html">Contact</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
           <!--/.nav-collapse -->
@@ -146,16 +141,17 @@
       </nav>
     </section>
     <!-- End menu -->
+
     <!-- Page breadcrumb -->
-    <section id="mu-page-breadcrumb" class="contact">
+    <section id="mu-page-breadcrumb" class="consortium">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="mu-page-breadcrumb-area">
-              <h2>Contact</h2>
+              <h2>RUN Sickle Cell+ Club</h2>
               <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li class="active">Contact</li>
+                <li><a href="/">Home</a></li>
+                <li class="active">RUN Sickle Cell+ Club</li>
               </ol>
             </div>
           </div>
@@ -164,121 +160,78 @@
     </section>
     <!-- End breadcrumb -->
 
-    <!-- Start contact  -->
-    <section id="mu-contact">
+    <!-- Intro section begins -->
+    <section id="mu-course-content">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="mu-contact-area">
-              <!-- start title -->
-              <div class="mu-title">
-                <h2 style="text-align: left">Get in Touch</h2>
-                <p style="text-align: left; padding: 0px">
-                  We value your inquiries, feedback, and collaboration
-                  opportunities. Feel free to reach out to us at The Redeemer's
-                  University Centre for Gender, Humanitarian and Development
-                  Studies Redeemer's University, P.M.B. 230, Ede, Osun State,
-                  Nigeria. For your questions and inquiries you can contact us
-                  at via
-                  <a href="tel:+2348052236377" style="color: #016632"
-                    >(+234) 8052236377</a
-                  >
-                  or send an email to
-                  <a href="mailto:cghds@run.edu.ng" style="color: #016632"
-                    >cghds@run.edu.ng</a
-                  >. Have any inquires or questions please fill out the form
-                  below.
-                </p>
-              </div>
-              <!-- end title -->
-              <!-- start contact content -->
-              <div class="mu-contact-content">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="mu-contact-left">
-                      <form
-                        class="contactform"
-                        id="homeContactForm"
-                        onsubmit="SubmitContactForm(event)"
-                        method="POST">
-                        <div class="comment-form-author">
-                          <label for="author">Name <span class="required">*</span></label>
-                          <input
-                            type="text"
-                            required="required"
-                            size="30"
-                            value=""
-                            name="author"
-                            id="author" />
-                        </div>
-                        <div class="comment-form-email">
-                          <label for="email"
-                            >Email <span class="required">*</span></label
-                          >
-                          <input
-                            type="email"
-                            required="required"
-                            aria-required="true"
-                            value=""
-                            name="email"
-                            id="email" />
-                        </div>
-                        <div class="comment-form-url">
-                          <label for="subject">Subject</label>
-                          <input type="text" name="subject" id="subject" />
-                        </div>
-                        <div class="comment-form-comment">
-                          <label for="comment"
-                            >Message <span class="required">*</span></label
-                          >
-                          <textarea
-                            required="required"
-                            aria-required="true"
-                            rows="8"
-                            cols="45"
-                            name="comment"
-                            id="comment"></textarea>
-                        </div>
-                        <div>
-                          <p id="correct_response">
-                            Thank you for contacting us, your message has been sent.
-                          </p>
-                          <p id="error_response">
-                            Error! Your message has not been sent. Please Try
-                            again!.
-                          </p>
-                        </div>
-                        <div class="form-submit">
-                          <input
-                            type="submit"
-                            value="Send Message"
-                            class="mu-post-btn"
-                            name="submit" />
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mu-contact-right">
-                      <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3954.0155623499813!2d4.4547189!3d7.6814748!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10382bf4cfc23a5d%3A0xdc6c4b4c1b582ddf!2sRedeemer&#39;s%20University%20Ede!5e0!3m2!1sen!2sng!4v1685005413577!5m2!1sen!2sng"
-                        width="600"
-                        height="450"
-                        style="border: 0"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- end contact content -->
-            </div>
-          </div>
-        </div>
+        <h2>RUN Sickle Cell+ Club</h2>
+        <p>
+          The &#39;RUN Sickle Cell+&#39; Club is a nonprofit organization under
+          the Centre for Gender, Humanitarian and Development Studies is
+          dedicated to raising awareness, providing support, and fostering a
+          sense of community for individuals and families affected by sickle
+          cell disease and other genetic disorders. Founded by a group of
+          individuals that were passionate about health, the club aims to
+          improve quality of life for those impacted and work towards a future
+          free from the burden of genetic diseases.
+        </p>
+        <p>
+          &#39;RUN Sickle Cell+&#39; Club aimed at creating a safe and inclusive
+          space where individuals with sickle cell disease and other genetic
+          disorders can find support, share experiences, and access valuable
+          resources. The club endeavours to enhance public understanding and
+          knowledge of these conditions, combat misconceptions, and advocate for
+          increased research and funding to improve treatment options.
+        </p>
+        <p>Strategies: </p>
+        <ol>
+          <li>Awareness and Education</li>
+          <li>Support and Empowerment</li>
+          <li>Fundraising and Advocacy</li>
+          <li>Community Building</li>
+          <li>Collaboration and Partnerships</li>
+        </ol>
+        <hr />
+        <h2>Founding and Growth</h2>
+        <p>
+          The &#39;RUN Sickle Cell+&#39; Club was established in April 2009
+          under the name Redeemer’s University Sickle Cell Area Club at the
+          Redeemer’s University, RCCG Camp Ground, Move, Ogun State. Initially,
+          the club began with a small group of individuals meeting regularly to
+          discuss their challenges and hopes. As word spread, more passionate
+          people with interest in sickle cell disease and other genetic
+          disorders joined, leading to the club&#39;s growth.
+        </p>
+        <p>
+          Through determined efforts, collaboration with healthcare
+          professionals, and support from the community, the club expanded its
+          reach and impact. It attracted volunteers, donors, and partners who
+          shared the same vision, contributing to the club&#39;s ability to
+          carry out its mission effectively.
+        </p>
+        <p>
+          In commemorating the 2023 World Sickle Cell Day the club on the 19 th
+          of June in collaboration with the University Health Centre held a
+          hybrid (virtual and physical) campaign with the theme – Building and
+          Strengthening the Global Sickle Cell Society which was greatly
+          attended.
+        </p>
+        <p>
+          The &#39;RUN Sickle Cell+&#39; Club stands as a testament to the
+          strength of community and the power of compassion. It serves as a
+          guiding light for individuals and families affected by sickle cell
+          disease and other genetic disorders, providing them with the necessary
+          resources, support, and hope. As the club continues to grow, its
+          unwavering dedication to its mission will undoubtedly bring positive
+          change, not only in the lives of those it touches directly but also in
+          the broader understanding and awareness of genetic diseases within
+          society. Together, they run towards a future free from the burdens of
+          genetic disorders, united in their pursuit of health, happiness, and a
+          better tomorrow.
+        </p>
       </div>
     </section>
-    <!-- End contact  -->
+    <!-- Intro section ends -->
+
     <!-- Start footer -->
     <footer id="mu-footer">
       <!-- start footer top -->
@@ -332,7 +285,6 @@
       <!-- end footer bottom -->
     </footer>
     <!-- End footer -->
-
     <!-- jQuery library -->
     <script src="assets/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -348,10 +300,8 @@
     <script
       type="text/javascript"
       src="assets/js/jquery.fancybox.pack.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- Custom js -->
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/form.js"></script>
   </body>
 </html>

@@ -788,13 +788,15 @@ img {
   background-color: #003218;
   color: #fff;
   display: flex;
+  gap: 3px;
   align-items: center;
+  justify-content: space-between;
   transition: all 1s;
 }
-/* .academic-program .academic-program-content:hover .description{
+.academic-program .academic-program-content:hover .description{
   color: white;
-  background-color: #003218;
-} */
+  background-color: #26884f;
+}
 .academic-program .academic-program-content:hover img{
   filter: brightness(0.4);
 }
@@ -849,7 +851,7 @@ img {
   border: none;
 }
 .consortium-samples{
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   font-weight: 600;
 
@@ -2288,11 +2290,23 @@ img {
   }
 }
 @media (max-width: 991px) {
+  #mu-menu .navbar-header .navbar-brand{
+    font-size: 14px;
+  }
+  #mu-menu .navbar-header .navbar-brand div{
+    height: 50px;
+  }
+  #mu-menu .navbar-header .navbar-brand img{
+    width: 60px;
+  }
   #mu-menu .navbar-default .navbar-nav li > a {
     font-size: 15px;
-    padding: 25px 10px;
+    padding: 15px 5px;
   }
-
+  #mu-menu .navbar-header .navbar-brand span{
+    width: 170px;
+    margin-left: 0px;
+  }
   #mu-search .mu-search-area {
     padding: 30% 0;
   }
@@ -2694,6 +2708,9 @@ img {
   }
 }
 @media (max-width: 480px) {
+  .academic-program .academic-program-content .description{
+    justify-content: space-between;
+  }
   #mu-header .mu-header-area .mu-header-top-left .mu-top-email {
     font-size: 12px;
     margin-top: 3px;
