@@ -2276,6 +2276,13 @@ img {
 #mu-footer .mu-footer-bottom .mu-footer-bottom-area p a {
   color: #fff;
 }
+#mu-footer .contact a{
+  color: white;
+  text-decoration: none;
+}
+#mu-footer .contact a:hover{
+  color: #016632;
+}
 
 /*==================
  RESPONSIVE DESIGN
