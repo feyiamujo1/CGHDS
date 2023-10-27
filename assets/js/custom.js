@@ -1,28 +1,4 @@
-/** 
-  * Template Name: Varsity
-  * Version: 1.0  
-  * Template Scripts
-  * Author: MarkUps
-  * Author URI: http://www.markups.io/
 
-  Custom JS
-  
-
-  1. SEARCH FORM
-  2. ABOUT US VIDEO
-  2. TOP SLIDER
-  3. ABOUT US (SLICK SLIDER) 
-  4. LATEST COURSE SLIDER (SLICK SLIDER) 
-  5. TESTIMONIAL SLIDER (SLICK SLIDER)
-  6. COUNTER
-  7. RELATED ITEM SLIDER (SLICK SLIDER)
-  8. MIXIT FILTER (FOR GALLERY)
-  9. FANCYBOX (FOR PORTFOLIO POPUP VIEW)  
-  11. HOVER DROPDOWN MENU
-  12. SCROLL TOP BUTTON  
-
-  
-**/
 
 jQuery(function($){
 
@@ -96,7 +72,7 @@ jQuery(function($){
       infinite: true,
       speed: 300,
       slidesToShow: 3,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2500,
       responsive: [
@@ -104,13 +80,13 @@ jQuery(function($){
           breakpoint: 1024,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
             infinite: true,
             dots: true
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2
